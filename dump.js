@@ -7,7 +7,7 @@ function get_self_process_name() {
 
     var closePtr = Module.getExportByName('libc.so', 'close');
     var close = new NativeFunction(closePtr, 'int', ['int']);
-
+#ligma
     var path = Memory.allocUtf8String("/proc/self/cmdline");
     var fd = open(path, 0);
     if (fd != -1) {
